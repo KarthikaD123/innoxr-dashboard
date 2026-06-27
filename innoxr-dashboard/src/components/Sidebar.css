@@ -1,0 +1,54 @@
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0b1020;
+    color:white;
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    flex-shrink:0;
+}
+
+.logo{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:45px;
+}
+
+.logo span{
+    color:#7c3aed;
+}
+
+.menu{
+    list-style:none;
+    padding:0;
+}
+
+.menu li{
+    padding:15px 18px;
+    margin-bottom:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:17px;
+}
+
+.menu li:hover{
+    background:#7c3aed;
+}
+
+.logout-btn{
+    margin-top:auto;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#ef4444;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#dc2626;
+}

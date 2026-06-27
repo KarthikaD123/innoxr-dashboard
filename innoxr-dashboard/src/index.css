@@ -1,0 +1,295 @@
+/* ===========================
+   GLOBAL RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body,#root{
+    width:100%;
+    min-height:100%;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s ease;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,input,select{
+    font-family:inherit;
+}
+
+/* ===========================
+      LIGHT THEME
+=========================== */
+
+.light{
+
+--bg:#f5f7fb;
+--card:#ffffff;
+--sidebar:#0f172a;
+--navbar:#ffffff;
+
+--text:#111827;
+--text-light:#6b7280;
+
+--primary:#6C4CF1;
+--primary-hover:#5a38e8;
+
+--border:#e5e7eb;
+
+--shadow:0 8px 25px rgba(0,0,0,.08);
+
+background:var(--bg);
+color:var(--text);
+
+transition:.3s;
+
+}
+
+/* ===========================
+      DARK THEME
+=========================== */
+
+.dark{
+
+--bg:#0f172a;
+--card:#1e293b;
+--sidebar:#020617;
+--navbar:#111827;
+
+--text:#ffffff;
+--text-light:#cbd5e1;
+
+--primary:#8b5cf6;
+--primary-hover:#7c3aed;
+
+--border:#334155;
+
+--shadow:0 10px 25px rgba(0,0,0,.45);
+
+background:var(--bg);
+color:var(--text);
+
+transition:.3s;
+
+}
+
+/* ===========================
+      COMMON TEXT
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+color:var(--text);
+}
+
+p,
+span,
+small,
+label{
+color:var(--text-light);
+}
+
+/* ===========================
+      COMMON CARDS
+=========================== */
+
+.card,
+.device-card,
+.stat-card,
+.settings-card,
+.analytics-card,
+.activity-box,
+.health-box,
+.alerts-box,
+.table-box,
+.location-box{
+
+background:var(--card);
+box-shadow:var(--shadow);
+color:var(--text);
+
+transition:.3s;
+
+}
+
+/* ===========================
+      INPUTS
+=========================== */
+
+input,
+select{
+
+background:var(--card);
+
+color:var(--text);
+
+border:1px solid var(--border);
+
+outline:none;
+
+}
+
+input::placeholder{
+color:#94a3b8;
+}
+
+/* ===========================
+      BUTTONS
+=========================== */
+
+button{
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.primary-btn{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+.primary-btn:hover{
+
+background:var(--primary-hover);
+
+}
+
+/* ===========================
+      THEME BUTTON
+=========================== */
+
+.theme-btn{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.theme-btn:hover{
+
+transform:scale(1.08);
+
+}
+
+/* ===========================
+      LOGOUT BUTTON
+=========================== */
+
+.logout-btn{
+
+background:linear-gradient(135deg,#ef4444,#dc2626);
+
+color:white;
+
+border:none;
+
+padding:12px 18px;
+
+border-radius:10px;
+
+font-weight:600;
+
+box-shadow:0 10px 20px rgba(239,68,68,.35);
+
+}
+
+.logout-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(239,68,68,.45);
+
+}
+
+/* ===========================
+      STATUS
+=========================== */
+
+.online{
+
+background:#16a34a;
+
+color:white;
+
+padding:6px 16px;
+
+border-radius:20px;
+
+font-weight:600;
+
+display:inline-block;
+
+}
+
+.offline{
+
+background:#ef4444;
+
+color:white;
+
+padding:6px 16px;
+
+border-radius:20px;
+
+font-weight:600;
+
+display:inline-block;
+
+}
+
+/* ===========================
+      SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#7c3aed;
+
+border-radius:20px;
+
+}
